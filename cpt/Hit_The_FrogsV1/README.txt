@@ -14,6 +14,5 @@ It was a nice day at the beach until the frogs show up. Is up to you to show the
 
 - Use the arrow keys to move and the up arrow to jump 
 - Use the spacebar to use the hammer 
-- Now get out there and kill some frogs
 
 I better get 100 for this
