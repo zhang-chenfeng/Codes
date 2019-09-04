@@ -2,7 +2,7 @@
 from os import listdir, rename, rmdir
 from os.path import join
 from shutil import move
-root_directory = "C:\\Users\\Alex\\Documents"
+root_directory = "C:\\Users\\zchen\\Documents"
 
 
 def extract(base_path):
