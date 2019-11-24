@@ -14,11 +14,10 @@ void add(int x){
 }
 
 void print(node* link){
-    if(link == NULL){
-        return;    
+    if(link != NULL){
+        printf("%d ", link -> element);
+        print(link -> next);  
     }
-    printf("%d ", link -> element);
-    print(link -> next);
 }
 
 node* reverse(node* link){
