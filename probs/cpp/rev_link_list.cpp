@@ -14,20 +14,18 @@ void add(int x){
 }
 
 void print(node* link){
-    if(link != NULL){
+    if(link != nullptr){
         printf("%d ", link -> element);
         print(link -> next);  
     }
 }
 
-node* reverse(node* link){
-    if(link -> next == NULL){
+void reverse(node* link){
+    if(link -> next == nullptr){
         list1 = link;
-        return link;
     }
-    reverse(link -> next) -> next = link;
-    link -> next = NULL;
-    return link;
+    link -> next -> next = link;
+    link -> next = nullptr;
 }
 
 int main(){
@@ -35,7 +33,7 @@ int main(){
         add(i);    
     }
     print(list1);
-    std::cout<<std::endl;
+    printf("\n");
     reverse(list1);
     print(list1);
 	return 0;
