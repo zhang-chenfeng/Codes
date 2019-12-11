@@ -24,6 +24,7 @@ void reverse(node* link){
     if(link -> next == nullptr){
         list1 = link;
     } else {
+	reverse(link -> next);
         link -> next -> next = link;
         link -> next = nullptr;
     }
