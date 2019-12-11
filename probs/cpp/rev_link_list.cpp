@@ -23,9 +23,10 @@ void print(node* link){
 void reverse(node* link){
     if(link -> next == nullptr){
         list1 = link;
+    } else {
+        link -> next -> next = link;
+        link -> next = nullptr;
     }
-    link -> next -> next = link;
-    link -> next = nullptr;
 }
 
 int main(){
